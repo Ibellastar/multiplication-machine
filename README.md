@@ -50,12 +50,23 @@ Timeout:            0
 If there are failing checks you will see summary of the failing tests:
 
 ```
+❌ Test 1 - Positive Num * Positive Num
+../.github/checker/tests/test_1.c:13:test_1:FAIL: Expected 3 Was 4
+
+❌ Test 2 - Positive Num * Negative Num
+../.github/checker/tests/test_2.c:14:test_2:FAIL: Expected -6 Was 6
+
+❌ Test 3 - Num * 0
+../.github/checker/tests/test_3.c:14:test_3:FAIL: Expected 0 Was 4
+
+❌ Test 4 - Negative Num * Negative Num
+../.github/checker/tests/test_4.c:14:test_4:FAIL: Expected 6 Was -6
 Summary of Failures:
 
-1/4 Prints numbers          FAIL            0.14s   exit status 2
-2/4 Prints Fizz             FAIL            0.25s   exit status 2
-3/4 Prints Buzz             FAIL            0.35s   exit status 2
-4/4 Prints FizzBuzz         FAIL            0.46s   exit status 2
+1/4 Test 1 - Positive Num * Positive Num             FAIL            0.14s   exit status 2
+2/4 Test 2 - Positive Num * Negative Num             FAIL            0.25s   exit status 2
+3/4 Test 3 - Num * 0                                 FAIL            0.35s   exit status 2
+4/4 Test 4 - Negative Num * Negative Num             FAIL            0.46s   exit status 2
 
 Ok:                 0
 Expected Fail:      0
