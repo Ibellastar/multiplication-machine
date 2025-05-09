@@ -55,7 +55,7 @@ test_3 = executable('test_3',
 )
 
 
-test('Test 3 - Positive Num * 0', test_3)
+test('Test 3 - Num * 0', test_3)
 
 test_4 = executable('test_4',
   sources: [
